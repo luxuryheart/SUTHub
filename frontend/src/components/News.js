@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function News() {
   const [count, setCount] = useState(0);
   const clickCount = () => {
     setCount(count + 1);
   };
+  const data =[{
+    title: "",
+    count: count
+  }]
+
+  useEffect (()=>{
+    
+  })
   return (
     <div class="m-3 d-flex">
       <span>
